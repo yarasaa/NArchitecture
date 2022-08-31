@@ -13,7 +13,7 @@ namespace Application.Features.Brands.Commands.CreateBrand
 {
     public class CreateBrandCommand:IRequest<CreatedBrandDto>
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public class CreateBrandCommandHandler : IRequestHandler<CreateBrandCommand, CreatedBrandDto>
         {
